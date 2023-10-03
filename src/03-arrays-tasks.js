@@ -298,6 +298,10 @@ function propagateItemsByPositionIndex(/* arr */) {
  */
 function get3TopItems(/* arr */) {
   throw new Error('Not implemented');
+  // let arr1 = [];
+  // if (arr.length === 0) {
+  //   return arr;
+  // }
 }
 
 
@@ -485,6 +489,14 @@ function getIdentityMatrix(/* n */) {
  */
 function getIntervalArray(/* start, end */) {
   throw new Error('Not implemented');
+  // const res = [];
+  // res[i] = start;
+  // res.map((el, index) => {
+  // })
+  // for (let i = start; i <= end; i += 1) {
+  //   result.push(i);
+  // }
+  // return result;
 }
 
 /**
@@ -498,8 +510,10 @@ function getIntervalArray(/* start, end */) {
  *   [ 'a', 'a', 'a', 'a' ]  => [ 'a' ]
  *   [ 1, 1, 2, 2, 3, 3, 4, 4] => [ 1, 2, 3, 4]
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
+function distinct(arr) {
+  // throw new Error('Not implemented');
+  const res = new Set(arr);
+  return [...res];
 }
 
 /**
@@ -552,6 +566,13 @@ function group(/* array, keySelector, valueSelector */) {
  */
 function selectMany(/* arr, childrenSelector */) {
   throw new Error('Not implemented');
+//   return arr.reduce((acc, current) => {
+//     if (current) {
+//       const child = childrenSelector(current.flat());
+//       return acc.concat(child);
+//     }
+//     return acc;
+//   });
 }
 
 
